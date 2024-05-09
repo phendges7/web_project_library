@@ -353,7 +353,8 @@
 }
 
 .footer__logo {
-  size: 58px 80px;
+  width: 58px;
+  height: 80px;
   margin-right: auto;
 }
 
@@ -368,6 +369,7 @@
 }
 
 .footer__column_content_social {
+  /* Como essa coluna tambem foi composta de uma lista, estilizei as linhas da lista, por fim a classe da div nao precisou ser estilizada */
 }
 
 .footer__list {
@@ -388,7 +390,8 @@
 
 .footer__social-icon {
   margin-right: 10px;
-  size: 16px 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
