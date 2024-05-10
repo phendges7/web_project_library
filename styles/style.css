@@ -352,24 +352,31 @@
   justify-content: space-between;
 }
 
-.footer__logo {
-  width: 58px;
-  height: 80px;
+.footer__column {
+  display: flex;
   margin-right: auto;
 }
 
-.footer__column-heading {
-  margin-bottom: 4px;
+.footer__logo {
+  width: 58px;
+  height: 80px;
 }
 
 .footer__column_content_hours {
   margin-left: auto;
-  margin-right: 80px;
+  margin-right: 0;
+  flex-direction: column;
   padding: 0;
 }
 
 .footer__column_content_social {
-  /* Como essa coluna tambem foi composta de uma lista, estilizei as linhas da lista, por fim a classe da div nao precisou ser estilizada */
+  margin-left: 80px;
+  margin-right: 0;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
 }
 
 .footer__list {
@@ -380,16 +387,18 @@
 }
 
 .footer__list-item {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .footer__column-link {
   color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .footer__social-icon {
-  margin-right: 10px;
   width: 16px;
   height: 16px;
 }
